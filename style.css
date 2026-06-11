@@ -123,4 +123,7 @@ body {
     #newGameButton:after {
         height: 40px;
     }
+    #body {
+        background-size: cover;
+    }
 }
