@@ -32,7 +32,7 @@ function createBoard() {
     }
     playerTurn = true;
     gameOver = false;
-    infoDisplay.textContent = "Your turn (player)";
+    infoDisplay.textContent = "Your turn playa";
     infoDisplay.style.color = "white";
 }
 
@@ -83,7 +83,7 @@ function makeComputerMove() {
     chosen.disabled = true;
 
     if (checkWinner("str8")) {
-        infoDisplay.textContent = "Computer wins!";
+        infoDisplay.textContent = "the Straights wins!";
         infoDisplay.style.color = "white";
         gameOver = true;
         disableBoard();
@@ -98,7 +98,7 @@ function makeComputerMove() {
     }
 
     playerTurn = true;
-    infoDisplay.textContent = "Your turn (gay)";
+    infoDisplay.textContent = "Your turn playa";
     infoDisplay.style.color = "white";
 }
 
