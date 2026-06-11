@@ -32,7 +32,8 @@ function createBoard() {
     }
     playerTurn = true;
     gameOver = false;
-    infoDisplay.textContent = "Your turn (X)";
+    infoDisplay.textContent = "Your turn (gay)";
+    infoDisplay.style.color = "white";
 }
 
 function getSquares() {
@@ -51,6 +52,7 @@ function handlePlayerClick(e) {
 
     if (checkWinner("gay")) {
         infoDisplay.textContent = "You win!";
+        infoDisplay.style.color = "white";
         gameOver = true;
         disableBoard();
         return;
@@ -58,12 +60,14 @@ function handlePlayerClick(e) {
 
     if (isBoardFull()) {
         infoDisplay.textContent = "Draw game!";
+        infoDisplay.style.color = "white";
         gameOver = true;
         return;
     }
 
     playerTurn = false;
     infoDisplay.textContent = "Computer's turn...";
+    infoDisplay.style.color = "white";
     computerMoveTimeout = setTimeout(makeComputerMove, 1000);
 }
 
@@ -80,6 +84,7 @@ function makeComputerMove() {
 
     if (checkWinner("str8")) {
         infoDisplay.textContent = "Computer wins!";
+        infoDisplay.style.color = "white";
         gameOver = true;
         disableBoard();
         return;
@@ -87,12 +92,14 @@ function makeComputerMove() {
 
     if (isBoardFull()) {
         infoDisplay.textContent = "Draw game!";
+        infoDisplay.style.color = "white";
         gameOver = true;
         return;
     }
 
     playerTurn = true;
     infoDisplay.textContent = "Your turn (gay)";
+    infoDisplay.style.color = "white";
 }
 
 function checkWinner(mark) {
