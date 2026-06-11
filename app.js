@@ -45,11 +45,11 @@ function handlePlayerClick(e) {
     const square = e.target;
     if (square.textContent !== "") return;
 
-    square.textContent = "X";
-    square.classList.add("x");
+    square.textContent = "gay";
+    square.classList.add("gay");
     square.disabled = true;
 
-    if (checkWinner("X")) {
+    if (checkWinner("gay")) {
         infoDisplay.textContent = "You win!";
         gameOver = true;
         disableBoard();
@@ -74,11 +74,11 @@ function makeComputerMove() {
     if (available.length === 0) return;
 
     const chosen = available[Math.floor(Math.random() * available.length)];
-    chosen.textContent = "O";
-    chosen.classList.add("o");
+    chosen.textContent = "str8";
+    chosen.classList.add("str8");
     chosen.disabled = true;
 
-    if (checkWinner("O")) {
+    if (checkWinner("str8")) {
         infoDisplay.textContent = "Computer wins!";
         gameOver = true;
         disableBoard();
@@ -92,7 +92,7 @@ function makeComputerMove() {
     }
 
     playerTurn = true;
-    infoDisplay.textContent = "Your turn (X)";
+    infoDisplay.textContent = "Your turn (gay)";
 }
 
 function checkWinner(mark) {
