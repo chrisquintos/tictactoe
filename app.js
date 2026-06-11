@@ -32,7 +32,7 @@ function createBoard() {
     }
     playerTurn = true;
     gameOver = false;
-    infoDisplay.textContent = "Your turn (gay)";
+    infoDisplay.textContent = "Your turn (player)";
     infoDisplay.style.color = "white";
 }
 
@@ -51,7 +51,7 @@ function handlePlayerClick(e) {
     square.disabled = true;
 
     if (checkWinner("gay")) {
-        infoDisplay.textContent = "You win!";
+        infoDisplay.textContent = "You win gay boi!🏳️‍🌈";
         infoDisplay.style.color = "white";
         gameOver = true;
         disableBoard();
